@@ -34,11 +34,15 @@ a:visited{
     padding: 30px 200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
     color: #F9FAF8;
     font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
 }
 
 .header .secondary{
@@ -47,7 +51,7 @@ a:visited{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .hero{
@@ -56,7 +60,7 @@ a:visited{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     flex: 1;
 }
 
@@ -92,9 +96,8 @@ a{
 .info-content{
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 100px; */
+    justify-content: space-around;
+    align-items: flex-start;
     flex: 3;
     margin: 30px;
     padding: 0;
@@ -114,6 +117,12 @@ a{
 }
 
 .info img{
+
+    width: auto; /* Adjusts image width to the container */
+    height: 100%; /* Maintains aspect ratio */
+    max-height: 160px; /* Prevents the image from growing larger than its original size */
+    
+
     border: 3px solid #3882F6;
     border-radius: 10px;
 }
@@ -127,7 +136,7 @@ a{
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
-    padding: 50px 360px;
+    padding: 10vh 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
